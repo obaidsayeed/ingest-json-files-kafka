@@ -79,7 +79,20 @@ docker exec -i kafka-json kafka-console-consumer.sh \
   --topic events \
   --from-beginning
 ```
+List all topics
+```bash
+sudo docker exec -i kafka-json kafka-topics.sh \
+  --bootstrap-server kafka-json:9092 \
+  --list
+```
 
+Delete a topic
+```bash
+sudo docker exec -i kafka-json kafka-topics.sh \
+  --bootstrap-server kafka-json:9092 \
+  --topic topic2 \
+  --delete
+```
 Navigate to http://localhost:9000/#/query and run the following query:
 
 ```sql
