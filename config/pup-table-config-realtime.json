@@ -1,0 +1,319 @@
+{
+  "tableName": "pup_data",
+  "tableType": "REALTIME",
+  "segmentsConfig": {
+    "timeColumnName": "pushDate",
+    "timeType": "MILLISECONDS",
+    "schemaName": "pup_schema",
+    "replicasPerPartition": "1",
+    "retentionTimeUnit": "DAYS",
+    "retentionTimeValue": "5"
+  },
+  "task": {
+    "taskTypeConfigsMap": {}
+  },
+  "tenants": {},
+  "tableIndexConfig": {
+    "loadMode": "MMAP",
+    "streamConfigs": {
+      "streamType": "kafka",
+      "stream.kafka.broker.list": "kafka-json:9093",
+      "stream.kafka.consumer.type": "lowLevel",
+      "stream.kafka.topic.name": "pup-topic",
+      "stream.kafka.decoder.class.name": "org.apache.pinot.plugin.stream.kafka.KafkaJSONMessageDecoder",
+      "stream.kafka.consumer.factory.class.name": "org.apache.pinot.plugin.stream.kafka20.KafkaConsumerFactory",
+      "stream.kafka.consumer.prop.auto.offset.reset": "largest"
+    },
+    "noDictionaryColumns": [
+      "ML_Search_Filter",
+      "activities",
+      "courses",
+      "tagsList",
+      "address",
+      "certifications",
+      "contacts",
+      "currentCompany",
+      "education",
+      "emailList",
+      "emails",
+      "experience",
+      "groups",
+      "highestEducation",
+      "interests",
+      "location_standard",
+      "patents",
+      "projects",
+      "publications",
+      "profileUrlInfo",
+      "recommendations",
+      "skills",
+      "socialProfile",
+      "versionInfo",
+      "linkedInUsers",
+      "industries",
+      "languages",
+      "summaries",
+      "metaData",
+      "childPdlIds",
+      "childPupIds",
+      "firstNameInfo",
+      "middleNameInfo",
+      "lastNameInfo",
+      "genderInfo",
+      "locationInfo",
+      "connections_countInfo",
+      "inferred_salaryInfo",
+      "dateOfBirthInfo",
+      "languageInfo",
+      "activitiesList",
+      "tagsListInfo",
+      "interestsList",
+      "summariesList",
+      "skillList",
+      "MLData"
+    ],
+    "jsonIndexColumns": [
+      "ML_Search_Filter",
+      "activities",
+      "courses",
+      "tagsList",
+      "address",
+      "certifications",
+      "contacts",
+      "currentCompany",
+      "education",
+      "emailList",
+      "emails",
+      "experience",
+      "groups",
+      "highestEducation",
+      "interests",
+      "location_standard",
+      "patents",
+      "projects",
+      "publications",
+      "profileUrlInfo",
+      "recommendations",
+      "skills",
+      "socialProfile",
+      "versionInfo",
+      "linkedInUsers",
+      "industries",
+      "languages",
+      "summaries",
+      "metaData",
+      "childPdlIds",
+      "childPupIds",
+      "firstNameInfo",
+      "middleNameInfo",
+      "lastNameInfo",
+      "genderInfo",
+      "locationInfo",
+      "connections_countInfo",
+      "inferred_salaryInfo",
+      "dateOfBirthInfo",
+      "languageInfo",
+      "activitiesList",
+      "tagsListInfo",
+      "interestsList",
+      "summariesList",
+      "skillList",
+      "MLData"
+    ]
+  },
+  "ingestionConfig": {
+    "batchIngestionConfig": {
+      "segmentIngestionType": "APPEND",
+      "segmentIngestionFrequency": "DAILY"
+    },
+    "transformConfigs": [
+      {
+        "columnName": "ML_Search_Filter",
+        "transformFunction": "jsonFormat(\"column1\")"
+      },
+      {
+        "columnName": "activities",
+        "transformFunction": "jsonFormat(\"column2\")"
+      },
+      {
+        "columnName": "courses",
+        "transformFunction": "jsonFormat(\"column3\")"
+      },
+      {
+        "columnName": "tagsList",
+        "transformFunction": "jsonFormat(\"column4\")"
+      },
+      {
+        "columnName": "address",
+        "transformFunction": "jsonFormat(\"column5\")"
+      },
+      {
+        "columnName": "certifications",
+        "transformFunction": "jsonFormat(\"column6\")"
+      },
+      {
+        "columnName": "contacts",
+        "transformFunction": "jsonFormat(\"column7\")"
+      },
+      {
+        "columnName": "currentCompany",
+        "transformFunction": "jsonFormat(\"column8\")"
+      },
+      {
+        "columnName": "education",
+        "transformFunction": "jsonFormat(\"column9\")"
+      },
+      {
+        "columnName": "emailList",
+        "transformFunction": "jsonFormat(\"column10\")"
+      },
+      {
+        "columnName": "emails",
+        "transformFunction": "jsonFormat(\"column11\")"
+      },
+      {
+        "columnName": "experience",
+        "transformFunction": "jsonFormat(\"column12\")"
+      },
+      {
+        "columnName": "groups",
+        "transformFunction": "jsonFormat(\"column13\")"
+      },
+      {
+        "columnName": "highestEducation",
+        "transformFunction": "jsonFormat(\"column14\")"
+      },
+      {
+        "columnName": "interests",
+        "transformFunction": "jsonFormat(\"column15\")"
+      },
+      {
+        "columnName": "location_standard",
+        "transformFunction": "jsonFormat(\"column16\")"
+      },
+      {
+        "columnName": "patents",
+        "transformFunction": "jsonFormat(\"column17\")"
+      },
+      {
+        "columnName": "projects",
+        "transformFunction": "jsonFormat(\"column18\")"
+      },
+      {
+        "columnName": "publications",
+        "transformFunction": "jsonFormat(\"column19\")"
+      },
+      {
+        "columnName": "profileUrlInfo",
+        "transformFunction": "jsonFormat(\"column20\")"
+      },
+      {
+        "columnName": "recommendations",
+        "transformFunction": "jsonFormat(\"column21\")"
+      },
+      {
+        "columnName": "skills",
+        "transformFunction": "jsonFormat(\"column22\")"
+      },
+      {
+        "columnName": "socialProfile",
+        "transformFunction": "jsonFormat(\"column23\")"
+      },
+      {
+        "columnName": "versionInfo",
+        "transformFunction": "jsonFormat(\"column24\")"
+      },
+      {
+        "columnName": "linkedInUsers",
+        "transformFunction": "jsonFormat(\"column25\")"
+      },
+      {
+        "columnName": "industries",
+        "transformFunction": "jsonFormat(\"column26\")"
+      },
+      {
+        "columnName": "languages",
+        "transformFunction": "jsonFormat(\"column27\")"
+      },
+      {
+        "columnName": "summaries",
+        "transformFunction": "jsonFormat(\"column28\")"
+      },
+      {
+        "columnName": "metaData",
+        "transformFunction": "jsonFormat(\"column29\")"
+      },
+      {
+        "columnName": "childPdlIds",
+        "transformFunction": "jsonFormat(\"column30\")"
+      },
+      {
+        "columnName": "childPupIds",
+        "transformFunction": "jsonFormat(\"column31\")"
+      },
+      {
+        "columnName": "firstNameInfo",
+        "transformFunction": "jsonFormat(\"column32\")"
+      },
+      {
+        "columnName": "middleNameInfo",
+        "transformFunction": "jsonFormat(\"column33\")"
+      },
+      {
+        "columnName": "lastNameInfo",
+        "transformFunction": "jsonFormat(\"column34\")"
+      },
+      {
+        "columnName": "genderInfo",
+        "transformFunction": "jsonFormat(\"column35\")"
+      },
+      {
+        "columnName": "locationInfo",
+        "transformFunction": "jsonFormat(\"column36\")"
+      },
+      {
+        "columnName": "connections_countInfo",
+        "transformFunction": "jsonFormat(\"column37\")"
+      },
+      {
+        "columnName": "inferred_salaryInfo",
+        "transformFunction": "jsonFormat(\"column38\")"
+      },
+      {
+        "columnName": "dateOfBirthInfo",
+        "transformFunction": "jsonFormat(\"column39\")"
+      },
+      {
+        "columnName": "languageInfo",
+        "transformFunction": "jsonFormat(\"column40\")"
+      },
+      {
+        "columnName": "activitiesList",
+        "transformFunction": "jsonFormat(\"column41\")"
+      },
+      {
+        "columnName": "tagsListInfo",
+        "transformFunction": "jsonFormat(\"column42\")"
+      },
+      {
+        "columnName": "interestsList",
+        "transformFunction": "jsonFormat(\"column43\")"
+      },
+      {
+        "columnName": "summariesList",
+        "transformFunction": "jsonFormat(\"column44\")"
+      },
+      {
+        "columnName": "skillList",
+        "transformFunction": "jsonFormat(\"column45\")"
+      },
+      {
+        "columnName": "MLData",
+        "transformFunction": "jsonFormat(\"column46\")"
+      }
+    ]
+  },
+  "metadata": {
+    "customConfigs": {}
+  }
+}

@@ -1,0 +1,321 @@
+{
+  "schemaName": "pup_schema",
+  "dimensionFieldSpecs": [
+    {
+      "name": "ML_Search_Filter",
+      "dataType": "JSON"
+    },
+    {
+      "name":"activities",
+      "dataType": "JSON"
+    },
+    {
+      "name": "courses",
+      "dataType": "JSON"
+    },
+    {
+      "name": "previousCountry",
+      "dataType": "STRING"
+    },
+    {
+      "name": "tagsList",
+      "dataType": "JSON"
+    },
+    {
+      "name": "parentPupId",
+      "dataType": "STRING"
+    },
+    {
+      "name": "graduationYear",
+      "dataType": "INT"
+    },
+    {
+      "name": "address",
+      "dataType": "JSON"
+    },
+    {
+      "name": "certifications",
+      "dataType": "JSON"
+    },
+    {
+      "name": "considerProfile",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "contacts",
+      "dataType": "JSON"
+    },
+    {
+      "name": "createdDate",
+      "dataType": "STRING"
+    },
+    {
+      "name": "currentCompany",
+      "dataType": "JSON"
+    },
+    {
+      "name": "dateOfBirth",
+      "dataType": "STRING"
+    },
+    {
+      "name": "education",
+      "dataType": "JSON"
+    },
+    {
+      "name": "emailList",
+      "dataType": "JSON"
+    },
+    {
+      "name": "emails",
+      "dataType": "JSON"
+    },
+    {
+      "name": "experience",
+      "dataType": "JSON"
+    },
+    {
+      "name": "firstName",
+      "dataType": "STRING"
+    },
+    {
+      "name": "gender",
+      "dataType": "STRING"
+    },
+    {
+      "name": "groups",
+      "dataType": "JSON"
+    },
+    {
+      "name": "highestEducation",
+      "dataType": "JSON"
+    },
+    {
+      "name": "industry",
+      "dataType": "STRING"
+    },
+    {
+      "name": "interests",
+      "dataType": "JSON"
+    },
+    {
+      "name": "language",
+      "dataType": "STRING"
+    },
+    {
+      "name": "languagePreference",
+      "dataType": "STRING"
+    },
+    {
+      "name": "lastName",
+      "dataType": "STRING"
+    },
+    {
+      "name": "location",
+      "dataType": "STRING"
+    },
+    {
+      "name": "location_org",
+      "dataType": "STRING"
+    },
+    {
+      "name": "standardizedDate",
+      "dataType": "STRING"
+    },
+    {
+      "name": "location_standard",
+      "dataType": "JSON"
+    },
+    {
+      "name": "middleName",
+      "dataType": "STRING"
+    },
+    {
+      "name": "patents",
+      "dataType": "JSON"
+    },
+    {
+      "name": "projects",
+      "dataType": "JSON"
+    },
+    {
+      "name": "publications",
+      "dataType": "JSON"
+    },
+    {
+      "name": "profileUrl",
+      "dataType": "STRING"
+    },
+    {
+      "name": "profileUrlInfo",
+      "dataType": "JSON"
+    },
+    {
+      "name": "pupId",
+      "dataType": "STRING"
+    },
+    {
+      "name": "pdlId",
+      "dataType": "STRING"
+    },
+    {
+      "name": "recommendations",
+      "dataType": "JSON"
+    },
+    {
+      "name": "refNum",
+      "dataType": "STRING"
+    },
+    {
+      "name": "set",
+      "dataType": "STRING"
+    },
+    {
+      "name": "skills",
+      "dataType": "JSON"
+    },
+    {
+      "name": "socialProfile",
+      "dataType": "JSON"
+    },
+    {
+      "name": "versionInfo",
+      "dataType": "JSON"
+    },
+    {
+      "name": "updatedDate",
+      "dataType": "STRING"
+    },
+    {
+      "name": "userId",
+      "dataType": "STRING"
+    },
+    {
+      "name": "linkedInUsers",
+      "dataType": "JSON"
+    },
+    {
+      "name": "industries",
+      "dataType": "JSON"
+    },
+    {
+      "name": "connections_count",
+      "dataType": "STRING"
+    },
+    {
+      "name": "languages",
+      "dataType": "JSON"
+    },
+    {
+      "name": "inferred_salary",
+      "dataType": "STRING"
+    },
+    {
+      "name": "inferred_experience_years",
+      "dataType": "INT"
+    },
+    {
+      "name": "summaries",
+      "dataType": "JSON"
+    },
+    {
+      "name": "bit_score",
+      "dataType": "INT"
+    },
+    {
+      "name": "metaData",
+      "dataType": "JSON"
+    },
+    {
+      "name": "swoopUniqueId",
+      "dataType": "STRING"
+    },
+    {
+      "name": "childPdlIds",
+      "dataType": "JSON"
+    },
+    {
+      "name": "childPupIds",
+      "dataType": "JSON"
+    },
+    {
+      "name": "firstNameInfo",
+      "dataType": "JSON"
+    },
+    {
+      "name": "middleNameInfo",
+      "dataType": "JSON"
+    },
+    {
+      "name": "lastNameInfo",
+      "dataType": "JSON"
+    },
+    {
+      "name": "genderInfo",
+      "dataType": "JSON"
+    },
+    {
+      "name": "locationInfo",
+      "dataType": "JSON"
+    },
+    {
+      "name": "connections_countInfo",
+      "dataType": "JSON"
+    },
+    {
+      "name": "inferred_salaryInfo",
+      "dataType": "JSON"
+    },
+    {
+      "name": "dateOfBirthInfo",
+      "dataType": "JSON"
+    },
+    {
+      "name": "languageInfo",
+      "dataType": "JSON"
+    },
+    {
+      "name": "activitiesList",
+      "dataType": "JSON"
+    },
+    {
+      "name": "tagsListInfo",
+      "dataType": "JSON"
+    },
+    {
+      "name": "interestsList",
+      "dataType": "JSON"
+    },
+    {
+      "name": "summariesList",
+      "dataType": "JSON"
+    },
+    {
+      "name": "skillList",
+      "dataType": "JSON"
+    },
+    {
+      "name": "duplicate",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "lastUpdatedDate",
+      "dataType": "STRING"
+    },
+    {
+      "name": "refreshedDate",
+      "dataType": "STRING"
+    },
+    {
+      "name": "MLData",
+      "dataType": "JSON"
+    }
+  ],
+  "dateTimeFieldSpecs" : [
+    {
+      "name":"pushDate",
+      "dataType":"TIMESTAMP",
+      "format": "1:MILLISECONDS:EPOCH",
+      "granularity": "1:MILLISECONDS"
+    }
+  ]
+}
